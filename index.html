@@ -1,59 +1,65 @@
 <!DOCTYPE html>
-<html>
-<Head>
-<Title>Survey form</Title>
-
-</Head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+</head>
 
 <body>
-<h1 id="title">Super Special Survey Form</h1>
-<p id="description">This is a super special survey form that asks for super special information only</p><br />
+    <header>
+        <h1 id="title">Super Special Survey Form</h1>
+        <p id="description">This is a super special survey form that asks for super special information only</p><br />
+    </header>
+    <main id="main">
+        <form id="survey-form">
+            <label for="name-label">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name"><br /><br />
 
-<form id="survey-form">
-    <label for="name-label">Name:</label>
-    <input id="name" type="text" placeholder="Enter your name"><br /><br />
+            <label for="email-label">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email here"><br />
+            <br />
 
-    <label for="email-label">Email:</label>
-    <input id="email" type="email" placeholder="Enter your email here"><br />
-    <br />
+            How amazing is this form from 1 to 5(1 being not so amazing and 5 being the most amazing thing you've seen today)<br />
+            <label for="number-label">Rating:</label> 
+            <input id="number" type="number" min="1" max="5" placeholder="Rating"><br/><br/>
+            What is your Favorite Kawhi quote?<br/>
+            <select id="dropdown" name="quotes">
+                <option value="Fun">I'm a Fun Guy</option>
+                <option value="Paid">Board Man gets Paid</option>
+            </select><br /><br/>
 
-    How amazing is this form from 1 to 5(1 being not so amazing and 5 being the most amazing thing you've seen today)<br />
-    <label for="number-label">Rating:</label> 
-    <input id="number" type="number" min="1" max="5" placeholder="Rating"><br/><br/>
-    What is your Favorite Kawhi quote?<br/>
-    <select id="dropdown" name="quotes">
-        <option value="Fun">I'm a Fun Guy</option>
-        <option value="Paid">Board Man gets Paid</option>
-    </select><br /><br/>
-
-    How linkely is it that Kawhi will stay with the raptors?(1-3, 1 not likely, 3 very likely)<br/>
-        1 <input type="radio" value="value1" name="group1">
-        2 <input type="radio" value="value2" name="group1">
-        3 <input type="radio" value="value3" name="group1"><br/>
+            How linkely is it that Kawhi will stay with the raptors?(1-3, 1 not likely, 3 very likely)<br/>
+            1 <input type="radio" value="value1" name="group1">
+            2 <input type="radio" value="value2" name="group1">
+            3 <input type="radio" value="value3" name="group1"><br/>
       
     
-    How likely is is that Raptors win a second NBA finals in the next 2 years(1-3, 1 not likely, 3 very likely)<br/>  
-        1 <input type="radio" value="value1" name="group2">
-        2 <input type="radio" value="value2" name="group2">
-        3 <input type="radio" value="value3" name="group2"><br/><br/>
+            How likely is is that Raptors win a second NBA finals in the next 2 years(1-3, 1 not likely, 3 very likely)<br/>  
+            1 <input type="radio" value="value1" name="group2">
+            2 <input type="radio" value="value2" name="group2">
+            3 <input type="radio" value="value3" name="group2"><br/><br/>
 
-        Please Select all of Kawhi's qualities. Select all that apply<br/>
-        Fun Guy: <input type="checkbox" name="sports" value="funguy"  /><br />
+            Please Select all of Kawhi's qualities. Select all that apply<br/>
+            Fun Guy: <input type="checkbox" name="sports" value="funguy"  /><br />
 
-        He's a Board man who gets Paid: <input type="checkbox" name="sports" value="boardman"  /><br /> 
+            He's a Board man who gets Paid: <input type="checkbox" name="sports" value="boardman"  /><br /> 
 
-        MVP: <input type="checkbox" name="sports" value="mvp"  /><br /> 
+            MVP: <input type="checkbox" name="sports" value="mvp"  /><br /> 
 
-        Future Hall Of Fame: <input type="checkbox" name="sports" value="halloffame"  /><br/>
+            Future Hall Of Fame: <input type="checkbox" name="sports" value="halloffame"  /><br/>
 
-        Not Good at Basketball: <input type="checkbox" name="sports" value="notgood"  /><br/><br/>
+            Not Good at Basketball: <input type="checkbox" name="sports" value="notgood"  /><br/><br/>
 
-        <label for="comments">Any Comments on the Raptors 2019 Championship run?</label><br/>
-        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea><br/><br/>
+            <label for="comments">Any Comments on the Raptors 2019 Championship run?</label><br/>
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea><br/><br/>
       
 
 
-    <button id="submit" type="submit">Submit</button> <input type="reset" value="clear">
-</form>
+            <button id="submit" type="submit">Submit</button> <input type="reset" value="clear">
+        </form>
+    </main>
 </body>
 </html>
